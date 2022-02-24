@@ -20,6 +20,10 @@ class TodoItem extends React.Component{
         }
     	}
 
+    componentWillUnmount(){
+    alert("Do you want to delete this")
+         }
+
     render(){
 
     	const completedStyle = {
