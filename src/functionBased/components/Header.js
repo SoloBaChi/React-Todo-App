@@ -1,4 +1,5 @@
 import React from 'react';
+import Font,{Text} from 'react-font';
 
 const Header = () => {
 	const headerStyle = {
@@ -8,15 +9,14 @@ const Header = () => {
     return(
         <header style={headerStyle}>
             <h1 style ={{
-            	color:'#ececec',
-            	fontSize:'6rem',
+            	color:'#e65117',
+            	fontSize:'1.8rem',
             	lineHeight:'1rem',
-            	textTransform:'lowercase',
                 textAlign:'center',
-                marginBottom:'3rem',
-                fontWeight:'600'
+                marginTop:'6rem',
+                fontWeight:'600',
 
-            }}>todos</h1>
+            }}><Font family="Lora">My Todo</Font></h1>
         </header>
     );
 }
