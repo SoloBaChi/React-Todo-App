@@ -75,16 +75,21 @@ function TodoContainer(props){
 
     return(
         <>
-        <Header/>
         <Navbar/>
+        <Switch>
+        <Route exact path ='/'>
+        <div className="container">
+        <div className="inner">
+        <Header/>
         <InputTodo addInputTodoProps = {addTodoItem}/>
         <TodosList todos = {todos}
         handleChangeProps ={handleChange}
         deleteTodoProps = {deleteTodo}
         setUpdate ={setUpdate}
         />
-      <Switch>
-        <Route exact path ="/"/>
+        </div>
+        </div>
+        </Route>
         <Route path="/about" component={About}/>
         <Route path ="*" component={NotMatch}/>
      </Switch> 
